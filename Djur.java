@@ -9,12 +9,12 @@ abstract public class Djur implements IDjurVikt{
         this.vikt = vikt;
         this.namn = namn;
     }
-
+    
     @Override
     public double getVikt() {
         return vikt;
     }
-
+    
     @Override
     public String getNamn() {
         return namn;
