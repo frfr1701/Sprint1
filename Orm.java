@@ -7,7 +7,7 @@ public class Orm extends Djur {
         super(namn,vikt);
     }
         @Override
-    void printMåltid() {
+    public void printMåltid() {
         JOptionPane.showMessageDialog(null, getNamn() + " är en orm som väger " + (int) getVikt() + "kg, den behöver 20g ormpellets");
     }
 }

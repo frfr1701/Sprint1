@@ -12,7 +12,7 @@ public class Katt extends Djur {
     }
 
     @Override
-    void printMåltid() {
+    public void printMåltid() {
         JOptionPane.showMessageDialog(null, getNamn() + " är en katt som väger " + (int) getVikt() + "kg, den behöver " + (int) hurMycketMat() + "g kattfoder");
     }
     

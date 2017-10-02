@@ -12,7 +12,7 @@ public class Hund extends Djur {
         return getVikt()*HUNDMAT;
     }
     @Override
-    void printMåltid() {
+    public void printMåltid() {
         JOptionPane.showMessageDialog(null, getNamn() + " är en hund som väger " + (int) getVikt() + "kg, den behöver " + (int) hurMycketMat() + "g hundfoder");
     }
 }

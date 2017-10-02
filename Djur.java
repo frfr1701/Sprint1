@@ -19,6 +19,5 @@ abstract public class Djur implements IDjurVikt{
     public String getNamn() {
         return namn;
     }
-    abstract void printMåltid();
 }
 
