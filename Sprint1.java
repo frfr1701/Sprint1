@@ -14,6 +14,7 @@ public class Sprint1 {
             if (val == null || val.equals("")) {
                 System.exit(0);
             }
+
             for (Djur djur : allaDjur) {
                 if (djur.getNamn().equalsIgnoreCase(val)) {
                     //polymorfism
