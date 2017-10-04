@@ -4,20 +4,15 @@ import javax.swing.JOptionPane;
 
 public class Hund extends Djur {
 
-    private static final double HUNDMAT = 1000 / 100;
+    private static final double HUNDMATOMVANDLARE = 1000.0/100.0;
 
     public Hund(String namn, double vikt) {
         super(namn, vikt);
 
     }
-
-    @Override
-    public double hurMycketMat() {
-        return getVikt() * HUNDMAT;
-    }
-
+    //polymorfism
     @Override
     public void printMåltid() {
-        JOptionPane.showMessageDialog(null, getNamn() + " är en hund som väger " + (int) getVikt() + "kg, den behöver " + (int) hurMycketMat() + "g hundfoder");
+        JOptionPane.showMessageDialog(null, getNamn() + " är en hund som väger " + (int) getVikt() + "kg, den behöver " + (int) (getVikt() * HUNDMATOMVANDLARE) + "g hundfoder");
     }
 }

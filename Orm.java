@@ -7,14 +7,9 @@ public class Orm extends Djur {
     public Orm(String namn, double vikt) {
         super(namn, vikt);
     }
-
-    @Override
-    public double hurMycketMat() {
-        return 20;
-    }
-
+    //polymorfism
     @Override
     public void printMåltid() {
-        JOptionPane.showMessageDialog(null, getNamn() + " är en orm som väger " + (int) getVikt() + "kg, den behöver " + hurMycketMat() + "g ormpellets");
+        JOptionPane.showMessageDialog(null, getNamn() + " är en orm som väger " + (int) getVikt() + "kg, den behöver 20g ormpellets");
     }
 }

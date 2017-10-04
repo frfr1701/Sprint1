@@ -4,20 +4,15 @@ import javax.swing.JOptionPane;
 
 public class Katt extends Djur {
 
-    private static final double KATTMAT = 1000 / 150;
+    private static final double KATTMATOMVANDLARE = (1000.0/150.0);
 
     public Katt(String namn, double vikt) {
         super(namn, vikt);
     }
-
-    @Override
-    public double hurMycketMat() {
-        return getVikt() * KATTMAT;
-    }
-
+    //polymorfism
     @Override
     public void printMåltid() {
-        JOptionPane.showMessageDialog(null, getNamn() + " är en katt som väger " + (int) getVikt() + "kg, den behöver " + (int) hurMycketMat() + "g kattfoder");
+        JOptionPane.showMessageDialog(null, getNamn() + " är en katt som väger " + (int) getVikt() + "kg, den behöver " + (int) (getVikt() * KATTMATOMVANDLARE) + "g kattfoder");
     }
 
 }

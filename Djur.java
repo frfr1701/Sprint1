@@ -9,12 +9,12 @@ abstract public class Djur implements IDjurVikt {
         this.vikt = vikt;
         this.namn = namn;
     }
-
+    //dynamisk bindning till subklasserna när jag anropar getVikt därifrån.
     @Override
     public double getVikt() {
         return vikt;
     }
-
+    //dynamisk bindning till subklasserna när jag anropar getNamn därifrån.
     @Override
     public String getNamn() {
         return namn;

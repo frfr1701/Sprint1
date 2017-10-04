@@ -6,7 +6,5 @@ public interface IDjurVikt {
 
     public String getNamn();
 
-    public double hurMycketMat();
-
     public void printMåltid();
 }
